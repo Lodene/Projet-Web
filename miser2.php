@@ -15,6 +15,12 @@
 		include("php/header.php");
 	?>
 	<main>
+		<?php 
+			if (isset($_GET['misedepart'])){
+				$_SESSION['mise'] = $_GET['misedepart'];
+				header('location: recherche.php');
+			} 
+		?>
 		<div id="hautmain">
 			<div id="gauchemain">
 				<a href="miser.php"> < </a>
@@ -23,34 +29,13 @@
 				<h1> Quelle sera la mise de départ ? </h1>
 
 				<form action="" method="get" id="formulaire">
-				    <input type="number" name="misedepart" id="texteformulaire" max="999999" min="1" placeholder="                           €" />
+				    <div class="rechercher"><input type="number" name="misedepart" id="texteformulaire" max="999999" min="1" placeholder="                           €" required/> </div>
+				    <div class="rechercher"><input type="submit" name="submit" value="Rechercher" id="valider"></div>
 				</form>
-				<?php 
-					if (empty($_GET['pseudo'])){
-						$_SESSION['mise'] = $_GET['misedepart'];
-						?>
-						<div class="rechercher">
-							<div>
-								<a href="recherche.php">
-									<h2> Recherchez </h2>
-									<h3> > </h3>
-								</a>
-							</div>
-						</div>
-						<?php
-					} else {
-						?>
-						<div class="rechercher">
-							<div>
-								<a href="#">
-									<h2> Recherchez </h2>
-									<h3> > </h3>
-								</a>
-							</div>
-						</div>
-						<?php
-						}	
-						?>
+				<form>
+					 
+				</form>
+				
 			</div>
 		</div>
 		<div class="cercles">
