@@ -1,0 +1,44 @@
+header {
+	display: flex;
+	height: 10vh;
+	background-color: #043784;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+header > h1 {
+	font-size: 50px;
+}
+
+
+
+
+header .profil {
+	width: 100px;
+}
+
+
+.ida {
+	display: flex;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 35px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+.profil {
+	display: flex;
+	padding-left: 30%;
+}
+
+.idap {
+	display: flex;
+}
+
+
+

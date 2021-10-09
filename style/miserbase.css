@@ -1,0 +1,45 @@
+main h1 {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+#hautmain {
+  display: flex;
+  align-items: center;
+  padding-top: 42%;
+}
+
+.cercle { 
+    height: 25px; 
+    width: 25px; 
+    background-color: gray;
+    border: 5px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+  } 
+
+
+#cercleun {
+  background-color: #043784;
+}
+
+
+#gauchemain > a, #droitemain > a {
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+#gauchemain > a:hover, #droitemain > a:hover {
+  text-decoration: underline;
+}
+
+#gauchemain {
+  padding-left: 10px;
+}
+
+#droitemain {
+  padding-right: 10px;
+}

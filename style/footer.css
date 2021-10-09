@@ -1,0 +1,41 @@
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #043784;
+}
+
+
+footer #miser {
+	width: 160px;
+}
+
+footer #argent {
+	width: 150px;
+}
+
+footer #home {
+	width: 150px;
+}
+
+
+footer .petit {
+	height: 50px;
+	width:  40px;
+	padding-top: 3%;
+	
+}
+
+.grand {
+	
+}
+
+footer > a > img {
+	padding: 20px;
+}
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+#texteformulaire {
+	width: 80%;
+	height: 10vh;
+	display: flex;
+	border-radius: 2em;
+	background-color: #043784;
+	margin-top: 60px;
+	font-size: 90px;
+	color: white;
+	box-shadow: 5px 5px 5px black;
+	border: 2px solid black;
+}
+
+#formulaire {
+	display: flex;
+	justify-content: center;
+}
+
+.rechercher {
+	display: flex;
+	justify-content: center;
+	padding-top: 60px;
+	color: white;
+	
+}
+
+.rechercher > div > a {
+	display: flex;
+	padding: 25px 25px 25px 25px;
+	border : 2px solid black;
+	border-radius: 2em;
+	box-shadow: 5px 5px 5px black;
+	text-decoration: none;
+	color: white;
+}
+
+.rechercher > div > a > h2 {
+	font-size: 50px;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+
+.rechercher > div > a > h3 {
+	font-size: 50px;
+	padding: 5px 10px 5px 10px;
+	background-color: ;
+	color: white;
+	border: 1px solid black;
+	border-radius: 1em;
+}
+
+.cercles {
+  display: flex;
+  padding-left: 45%;
+  padding-top: 32%;
+
+}
+
+.cercle {
+	background-color: #043784;
+}
+
+.

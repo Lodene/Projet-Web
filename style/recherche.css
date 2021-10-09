@@ -1,0 +1,9 @@
+.block {
+	border:  2px solid black;
+	margin:  2vh 2vh 2vh 2vh;
+}
+
+.block > p  {
+	margin:  1vh 1vh 0vh 1vh;
+	font-size: 35px;
+}
