@@ -45,7 +45,7 @@
 						<h2> Esapce Fidelité </h2>
 					</div>
 					<div class="bas">
-						<a href="#" class="ligne">
+						<a href="#" cl
 							<p>Devenir partenaire</p>
 							<p class="droite"> > </p>
 						</a>
