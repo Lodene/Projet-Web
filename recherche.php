@@ -31,10 +31,8 @@
 				<p> date fin : <?php echo $data['fin']; ?></p>
 				<p> argent récolté : <?php echo $data['argent']; ?> </p>
 				<p> trader : <?php echo $data['nom'] . " " . $data['prenom']; ?> </p>
-				<p><a href="detailrecherche.php">Voir l'evenement</p></a>
-				<?php 
-					$_SESSION['numeve'] = $data['numevenement'];
-				?>
+				<p><a href="detailrecherche.php?id=<?php echo $data['numevenement']; ?>">Voir l'evenement</p></a>
+
 			</div> <?php 
 			}
 		} else {

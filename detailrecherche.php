@@ -16,7 +16,8 @@
 	?>
 	<main>
 		<?php
-		$numeve = $_SESSION['numeve'];
+		$numeve = $_GET['id'];
+		$_SESSION['numevenement'] = $_GET['id'];
 		if(isset($_SESSION["pseudo"] )){ 
 			$query = "SELECT * FROM evenement e 
 							INNER JOIN trader t ON numevenement = $numeve";

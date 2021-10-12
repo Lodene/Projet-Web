@@ -27,11 +27,10 @@
 			if (mysqli_num_rows($result) == 1) {
 				$user = mysqli_fetch_assoc($result);
 				$_SESSION['pseudo'] = $user['pseudo'];
-				$_SESSION['connecte'] = 1;
+				$_SESSION['numclient'] = $user['numclient'];
 				header('location: index.php');
 			}else{
 				$message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
-				$connecte = 0;
 			}
 		}
 

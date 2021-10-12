@@ -20,11 +20,14 @@
 		<p> Bravo votre mise à été ajouté a l'evenement </p>
 		<?php
 			$a = 1;
+
 			if ($a = 1) {
 				$a = 2;
 				$totalargent = 0;
-				$numevenement = $_SESSION['numeve'];
+				$numevenement = $_SESSION['numevenement'];
+				$numclient = $_SESSION['numclient'];
 				$mise = $_SESSION['mise'];
+				echo $numevenement;
 				$query = "SELECT * FROM evenement WHERE numevenement = $numevenement";
 				$result = mysqli_query($conn,$query) or die(mysql_error());
 
@@ -32,9 +35,14 @@
 					$totalargent = $data['argent'];
 				}
 				$totalargent = $mise + $totalargent;
+			
+				$query = "UPDATE evenement SET argent = $totalargent WHERE numevenement = $numevenement";
+				$result = mysqli_query($conn,$query) or die(mysql_error());
+
+				$query = "INSERT into `participer` (numevenement, numclient)
+											VALUES ($numevenement, $numclient)";
+				$result = mysqli_query($conn,$query) or die(mysql_error());
 			}
-			$query = "UPDATE evenement SET argent = $totalargent WHERE numevenement = $numevenement";
-			$result = mysqli_query($conn,$query) or die(mysql_error());
 			
 		?>
 		<p> <a href="index.php"> Retour a la page d'accueil</a>
